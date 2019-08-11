@@ -1,0 +1,50 @@
+.navigation {
+  padding-top: 15px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #f2d374;
+
+  &__title {
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  &__select {
+    .select__item {
+      select {
+        border: 1px solid #f2d374;
+        outline: none;
+        padding: 5px;
+        border-radius: 5px;
+        transition: 0.4s ease;
+      }
+    }
+  }
+
+  &__input {
+    .input__item.input {
+      flex: 0 0 75%;
+
+      input {
+        width: 100%;
+        padding: 5px 10px;
+        outline: none;
+        border: 1px solid #f2d374;
+        border-radius: 5px;
+      }
+    }
+
+    .input__item.button {
+      flex: 0 0 23%;
+
+      button.btn {
+        width: 100%;
+        background-color: #f2d374;
+        color: white;
+        padding: 7px;
+        font-size: 13px;
+        outline: none;
+      }
+    }
+  }
+}

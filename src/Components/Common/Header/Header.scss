@@ -1,0 +1,14 @@
+.header {
+  padding: 15px;
+
+  &__line {
+    flex: 0 0 42%;
+    height: 2px;
+    background-color:#f2d374; 
+  }
+
+  &__title {
+    letter-spacing: 5px;
+    font-weight: bold;  
+  }
+}
