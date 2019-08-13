@@ -36,7 +36,7 @@ class NavBar extends PureComponent {
                 <input type="text" placeholder="Find your iterest" />
               </div>
               <div className="input__item button">
-                <button type="button" class="btn"><i class="fas fa-search mr-1"></i> SEARCH</button>
+                <button type="button" className="btn"><i className="fas fa-search mr-1"></i> SEARCH</button>
               </div>
             </div>
           </div>

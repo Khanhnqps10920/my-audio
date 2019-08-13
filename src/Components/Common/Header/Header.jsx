@@ -2,6 +2,8 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import "./Header.scss";
 import NavBar from '../../NavBar/NavBar';
+import { VerticleButton as ScrollUpButton } from "react-scroll-up-button"; //Add this line Here
+
 
 class Header extends PureComponent {
   render() {
@@ -15,6 +17,7 @@ class Header extends PureComponent {
           <div className="header__line"></div>
         </div>
         <NavBar />
+        <ScrollUpButton />
       </header>
     );
   }

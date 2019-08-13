@@ -1,0 +1,32 @@
+.post-item {
+  -webkit-box-shadow: 10px 10px 5px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px -7px rgba(0, 0, 0, 0.75);
+  transform: scale(0.9);
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1);
+  }
+
+  &__image {
+    border-bottom: 2.5px solid #f2d374;
+
+    img {
+      width: 100%;
+    }
+    img:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__title {
+    i {
+      color: #f2d374;
+    }
+
+    i:hover {
+      cursor: pointer;
+    }
+  }
+}

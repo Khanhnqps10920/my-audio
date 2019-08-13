@@ -1,0 +1,17 @@
+.title {
+  width: 200px;
+  margin: 5px 10px;
+  border-bottom: 0.3px solid gray;
+}
+
+.chevron {
+  padding: 5px 8px;
+  border: 0.5px solid grey;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+.chevron:hover {
+  border-color: black;
+  opacity: 0.5;
+}
