@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import "./Post.scss";
 import ModalComponent from '../Modal/ModalComponent';
+import { withRouter } from "react-router-dom";
 
 
 class Post extends PureComponent {
@@ -19,13 +20,21 @@ class Post extends PureComponent {
     })
   }
 
+  handleClickPost = (e) => {
+
+    const { history, location } = this.props;
+    const url = `${location.pathname}post`;
+    history.push(url);
+
+  }
+
   render() {
 
     const { modal } = this.state;
-    console.log(modal);
+    console.log(modal, this.props);
 
     return (
-      <div className="post-item p-2">
+      <div className="post-item p-2" onClick={(e) => this.handleClickPost(e)}>
         <div className="post-item__image pb-2">
           <img src="/images/demo.jpg" alt="" />
         </div>
@@ -47,4 +56,4 @@ Post.propTypes = {
 
 };
 
-export default Post;
+export default withRouter(Post);

@@ -1,20 +1,22 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import Header from './Components/Common/Header/Header';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import "./App.css";
 import HomePage from './Container/HomePage/HomePage';
-import Footer from './Components/Common/Footer/Footer';
-import Modal from './Components/Modal/ModalComponent';
+import PostPage from './Container/PostPage/PostPage';
 
 
 class App extends PureComponent {
   render() {
     return (
-      <div className="content">
-        <Header />
-        <HomePage />
-        <Footer />
-      </div>
+      <BrowserRouter>
+
+        <Switch>
+          <Route path="/" exact component={HomePage} />
+          <Route path="/post" component={PostPage} />
+        </Switch>
+
+      </BrowserRouter>
     );
   }
 }

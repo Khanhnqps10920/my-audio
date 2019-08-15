@@ -6,6 +6,8 @@
   transition: 0.3s ease-in-out;
 
   &:hover {
+    box-shadow: none;
+    cursor: pointer;
     transform: scale(1);
   }
 
@@ -14,9 +16,6 @@
 
     img {
       width: 100%;
-    }
-    img:hover {
-      cursor: pointer;
     }
   }
 
